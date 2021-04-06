@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Super Trunfo - LotR</title>
+  </head>
+
+  <body>
+    <body>
+      <div class="container">
+          <h1 class="page-title">Super Trunfo</h1>
+          <button onclick="drawCards()" id="btnSortear">Sortear carta</button>
+          <form id="form">
+              <h2>Escolha o seu atributo</h2>
+
+              <div class="wrapper">
+                <div id="placar"></div>
+                <div id="quantidade-cartas"></div>
+                <div id="cartas">
+                  <div id="carta-jogador" class="carta"></div>
+                  <div id="carta-maquina" class="carta"></div>
+              </div>
+              </div>
+
+              <button class="button-jogar" type="button" id="btnJogar" onclick="play()" disabled="true">Jogar</button>
+              <div id="resultado"></div>
+              <button type="button" id="btnProximaRodada" onclick="nextRound()" disabled="true">Proxima
+                rodada</button>
+              </div>
+          </form>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
